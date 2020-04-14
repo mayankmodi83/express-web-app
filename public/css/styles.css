@@ -1,0 +1,51 @@
+h3 {
+    color: grey
+}
+
+
+.footer {
+    text-align: center;
+    background-color: darkolivegreen;
+    height: 50px;
+    padding-top: 25px;
+}
+
+.header {
+    background-color: darkgray;
+    margin: 10px;
+}
+
+.header a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.portrait {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+input {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px;
+    color: blue;
+    background-color: yellow;
+    border: 1px solid black;
+}
