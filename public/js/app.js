@@ -1,17 +1,15 @@
 console.log("Javascript loaded....");
 
 const searchLocation = (location, callback) => {
-  fetch("http://localhost:3000/weather?address=" + location).then(
-    (response) => {
-      return response.json().then((data) => {
-        if (data.error) {
-          callback(data.error, null);
-        } else {
-          callback(null, data);
-        }
-      });
-    }
-  );
+  fetch("/weather?address=" + location).then((response) => {
+    return response.json().then((data) => {
+      if (data.error) {
+        callback(data.error, null);
+      } else {
+        callback(null, data);
+      }
+    });
+  });
 };
 
 const form = document.querySelector("form");
